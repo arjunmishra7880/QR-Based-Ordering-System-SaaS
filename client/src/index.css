@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --qm-bg: #faf8f5;
+    --qm-surface: #f2eee9;
+    --qm-card: #ffffff;
+    --qm-ink: #49332a;
+    --qm-muted: #766158;
+    --qm-line: #e4ddd5;
+    --qm-accent: #49332a;
+    --qm-accent-hover: #38261f;
+    --qm-accent-ink: #faf8f5;
+    --qm-primary: #49332a;
+    --qm-primary-hover: #38261f;
+    --qm-primary-ink: #faf8f5;
+    --qm-secondary: #766158;
+    --qm-secondary-ink: #faf8f5;
+    --qm-tint: #ede6de;
+  }
+
+  body {
+    background-color: var(--qm-bg);
+    color: var(--qm-ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .font-display {
+    font-family: "Fraunces", Georgia, serif;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+client/dist/
+
+# Local SQLite database, WAL/SHM & backups
+server/data/*.db
+server/data/*.db-*
+server/data/*.bak
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Environment & logs
+.env
+.env.*
+*.log

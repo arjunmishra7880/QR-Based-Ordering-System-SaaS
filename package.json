@@ -1,0 +1,15 @@
+{
+  "name": "quickmenu-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-contained QR Menu, Table Ordering, Kitchen Display System, and Owner Dashboard",
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c cyan,yellow \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start",
+    "test": "node server/tests/e2e.test.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
